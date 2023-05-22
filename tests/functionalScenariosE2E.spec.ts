@@ -46,7 +46,7 @@ test('verify that user is able to buy a product', async ({ page }) => {
   await expect(productPage.titlePage).toHaveText('Products');
 });
 
-test('verify that user is able to remove to select other product ', async ({
+test('verify that user is able to remove to select other product', async ({
   page,
 }) => {
   const loginPage = new Login(page);

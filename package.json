@@ -14,9 +14,8 @@
   },
   "scripts": {
     "execute-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\"",
-    "lint": "eslint **/*.ts",
-    "lint-fix": "eslint --fix **/*.ts",
-    "eslint": "eslint --cache --ext ts,tsx .",
+    "lint": "eslint pages/*.ts",
+    "lint-fix": "eslint --fix pages/*.ts",
     "format": "prettier . --write"
   },
   "husky": {

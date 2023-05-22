@@ -9,7 +9,7 @@ test.beforeEach(async ({ page }) => {
   await page.goto(URLS.SAUCEDEMOURL);
 });
 
-test('verify that user is not able to checkout without valid information ', async ({
+test('verify that user is not able to checkout without valid information', async ({
   page,
 }) => {
   const loginPage = new Login(page);
