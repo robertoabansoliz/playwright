@@ -10,11 +10,11 @@ export class YourCart {
 
   constructor(page: Page) {
     this.page = page;
-    this.titlePage = page.locator('.header_secondary_container span')
+    this.titlePage = page.locator('.header_secondary_container span');
     this.removeButton = page.locator('#remove-sauce-labs-backpack');
     this.checkoutButton = page.locator('#checkout');
     this.productTitle = page.locator('.inventory_item_name');
-    this.continueShoppingButton = page.locator('#continue-shopping')
+    this.continueShoppingButton = page.locator('#continue-shopping');
   }
 
   async clickRemoveButton() {
@@ -22,7 +22,7 @@ export class YourCart {
   }
 
   async clickContinueShopping() {
-    await this.continueShoppingButton.click()
+    await this.continueShoppingButton.click();
   }
 
   async clickCheckoutButton() {
@@ -36,5 +36,4 @@ export class YourCart {
   async getTitlePage() {
     await this.titlePage.innerText();
   }
-
 }

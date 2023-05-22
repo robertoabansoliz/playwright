@@ -14,22 +14,20 @@ export class Login {
   }
 
   async enterUserName(userName) {
-    await this.userNameField.fill(userName)
+    await this.userNameField.fill(userName);
   }
-
 
   async enterPassword(password) {
-    await this.passwordField.fill(password)
+    await this.passwordField.fill(password);
   }
-
 
   async clickLogin() {
-    await this.loginButton.click()
+    await this.loginButton.click();
   }
 
-   async login(userName, password) {
-    await this.enterUserName(userName)
-    await this.enterPassword(password)
-    await this.clickLogin()
-   }
+  async login(userName, password) {
+    await this.enterUserName(userName);
+    await this.enterPassword(password);
+    await this.clickLogin();
+  }
 }

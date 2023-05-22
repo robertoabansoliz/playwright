@@ -12,24 +12,22 @@ export class Product {
     this.titlePage = page.locator('.header_secondary_container .title');
     this.backpack = page.locator('#add-to-cart-sauce-labs-backpack');
     this.bikeLight = page.locator('#add-to-cart-sauce-labs-bike-light');
-    this.cartIcon = page.locator('.shopping_cart_link')
+    this.cartIcon = page.locator('.shopping_cart_link');
   }
 
   async getTitle() {
-    await this.titlePage.innerText()
+    await this.titlePage.innerText();
   }
-
 
   async selectBikeLight() {
-    await this.bikeLight.click()
+    await this.bikeLight.click();
   }
 
-
   async selectBackpack() {
-    await this.backpack.click()
+    await this.backpack.click();
   }
 
   async clickCartIcon() {
-   await this.cartIcon.click()
+    await this.cartIcon.click();
   }
 }

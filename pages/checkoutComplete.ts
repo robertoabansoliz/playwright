@@ -8,7 +8,7 @@ export class CheckoutComplete {
 
   constructor(page: Page) {
     this.page = page;
-    this.titlePage = page.locator('.header_secondary_container span')
+    this.titlePage = page.locator('.header_secondary_container span');
     this.backHomeButton = page.locator('#back-to-products');
     this.successMessage = page.locator('.complete-header');
   }
@@ -24,5 +24,4 @@ export class CheckoutComplete {
   async getTitlePage() {
     await this.titlePage.innerText();
   }
-
 }

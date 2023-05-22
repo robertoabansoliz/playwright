@@ -8,7 +8,7 @@ export class CheckoutOverview {
 
   constructor(page: Page) {
     this.page = page;
-    this.titlePage = page.locator('.header_secondary_container span')
+    this.titlePage = page.locator('.header_secondary_container span');
     this.finishButton = page.locator('#finish');
     this.productTitle = page.locator('.inventory_item_name');
   }
@@ -24,5 +24,4 @@ export class CheckoutOverview {
   async getTitlePage() {
     await this.titlePage.innerText();
   }
-
 }
